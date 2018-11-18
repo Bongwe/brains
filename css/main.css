@@ -3,14 +3,35 @@
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+
+@font-face {
+    font-family: 'zreaks_nfiregular';
+    src: url('../fonts/myfonts/zreaks_nfi.woff2') format('woff2'),
+         url('../fonts/myfonts/zreaks_nfi.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'caveat_brushregular';
+    src: url('../fonts/myfonts/caveatbrush-regular.woff2') format('woff2'),
+         url('../fonts/myfonts/caveatbrush-regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
 html, body {
 	height:100%;
 }
 
 body{
+	font-family: 'caveat_brushregular';
 	background-color:black;
 	color: white;
 	font-size: 20px;
+	text-align: center;
 }
 
 #an-interesting-fact {
@@ -21,9 +42,40 @@ body{
 	padding-top: 15%;
 }
 
+#game-tile {
+	color: #FF239C;
+	font-family: 'zreaks_nfiregular';
+	font-size: 40px;
+}
 
+#on-game-title {
+	color: #FF239C;
+	font-family: 'zreaks_nfiregular';
+	font-size: 20px;
+	padding-bottom: 10px;
+}
 
+#about_link {
+	margin-top: 10px;
+}
 
+#game-description {
+	font-family: 'caveat_brushregular';
+	font-size: 25px;
+}
+
+#about-text {
+	font-size: 25px;
+}
+
+.play_link{
+	text-align: center;
+	background-color: #B20062;
+}
+
+a{
+	color: white;
+}
 
 
 

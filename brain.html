@@ -10,7 +10,7 @@
         <link rel="stylesheet" href="css/bootstrap.min.css">
         <style>
             body {
-                padding-top: 50px;
+                padding-top: 20px;
                 padding-bottom: 20px;
             }
         </style>
@@ -21,52 +21,72 @@
 		<div class="container d-flex h-100">
 
             <div class = "row">
-                <div class="col-xs-10 col-xs-offset-2" id="player_health_status">
+                <div class="col-xs-7" id="on-game-title">
+                    <p>I Wanna Eat Your brain!</p>
                 </div>
+
+                <div class="col-xs-1" id="heart-1">
+                        <img src = "img/heart.png" alt="life indicator"/>
+                    </div>
+                    <div class="col-xs-1" id="heart-2">
+                        <img src = "img/heart.png" alt="life indicator"/>
+                    </div>
+                    <div class="col-xs-1" id="heart-3">
+                        <img src = "img/heart.png" alt="life indicator"/>
+                    </div>
+
             </div>
 
             <div class = "row">
-                <div class="col-xs-2 col-xs-offset-2" id="block-0"><img class="img-fluid" src="img/brain(grey).png"></div>
-                <div class="col-xs-2" id="block-1"><img class="img-fluid" src="img/brain(grey).png"></div>
-                <div class="col-xs-2" id="block-2"><img class="img-fluid" src="img/brain(grey).png"></div>
-                <div class="col-xs-2" id="block-3"><img class="img-fluid" src="img/brain(grey).png"></div>
+                <div class="col-xs-2 col-xs-offset-2" id="block-0"><img class="img-fluid" src="img/questionmark.png"></div>
+                <div class="col-xs-2" id="block-1"><img class="img-fluid" src="img/questionmark.png"></div>
+                <div class="col-xs-2" id="block-2"><img class="img-fluid" src="img/questionmark.png"></div>
+                <div class="col-xs-2" id="block-3"><img class="img-fluid" src="img/questionmark.png"></div>
             </div>
             <div class = "row">
-                <div class="col-xs-2 col-xs-offset-2" id="block-4"><img class="img-fluid blocks" src="img/brain(grey).png"></div>
-                <div class="col-xs-2" id="block-5"><img class="img-fluid blocks" src="img/brain(grey).png"></div>
-                <div class="col-xs-2" id="block-6"><img class="img-fluid blocks" src="img/brain(grey).png"></div>
-                <div class="col-xs-2" id="block-7"><img class="img-fluid blocks" src="img/brain(grey).png"></div>
+                <div class="col-xs-2 col-xs-offset-2" id="block-4"><img class="img-fluid blocks" src="img/questionmark.png"></div>
+                <div class="col-xs-2" id="block-5"><img class="img-fluid blocks" src="img/questionmark.png"></div>
+                <div class="col-xs-2" id="block-6"><img class="img-fluid blocks" src="img/questionmark.png"></div>
+                <div class="col-xs-2" id="block-7"><img class="img-fluid blocks" src="img/questionmark.png"></div>
             </div>
             <div class = "row">
-                <div class="col-xs-2 col-xs-offset-2" id="block-8"><img class="img-fluid blocks" src="img/brain(grey).png"></div>
-                <div class="col-xs-2" id="block-9"><img class="img-fluid blocks" src="img/brain(grey).png"></div>
-                <div class="col-xs-2" id="block-10"><img class="img-fluid blocks" src="img/brain(grey).png"></div>
-                <div class="col-xs-2" id="block-11"><img class="img-fluid blocks" src="img/brain(grey).png"></div>
+                <div class="col-xs-2 col-xs-offset-2" id="block-8"><img class="img-fluid blocks" src="img/questionmark.png"></div>
+                <div class="col-xs-2" id="block-9"><img class="img-fluid blocks" src="img/questionmark.png"></div>
+                <div class="col-xs-2" id="block-10"><img class="img-fluid blocks" src="img/questionmark.png"></div>
+                <div class="col-xs-2" id="block-11"><img class="img-fluid blocks" src="img/questionmark.png"></div>
             </div>
             <div class = "row">
-                <div class="col-xs-2 col-xs-offset-2" id="block-12"><img class="img-fluid blocks" src="img/brain(grey).png"></div>
-                <div class="col-xs-2" id="block-13"><img class="img-fluid blocks" src="img/brain(grey).png"></div>
-                <div class="col-xs-2" id="block-14"><img class="img-fluid blocks" src="img/brain(grey).png"></div>
-                <div class="col-xs-2" id="block-15"><img class="img-fluid blocks" src="img/brain(grey).png"></div>
+                <div class="col-xs-2 col-xs-offset-2" id="block-12"><img class="img-fluid blocks" src="img/questionmark.png"></div>
+                <div class="col-xs-2" id="block-13"><img class="img-fluid blocks" src="img/questionmark.png"></div>
+                <div class="col-xs-2" id="block-14"><img class="img-fluid blocks" src="img/questionmark.png"></div>
+                <div class="col-xs-2" id="block-15"><img class="img-fluid blocks" src="img/questionmark.png"></div>
             </div>
+
+            <div class = "row">
+                <div class="col-xs-8 col-xs-offset-2">
+                    <hr>
+                </div>
+            </div>
+                
             <div class = "row">
                 <div class="col-xs-8 col-xs-offset-2" id="an-interesting-fact"></div>
             </div>
 
-            <div class = "row" id = "gameOverMessage">
+            <div class = "row" id ="gameOverMessage">
                 <div class = "row">
                     <div class="col-xs-8 col-xs-offset-2">
-                        Your brain was eaten :(
+                       <p>Your whole brain was eaten by zombies...ouch!</p>
                     </div>
                 </div>
         
                 <div class = "row">
                     <a href="brain.html">
-                        <div class="col-xs-8 col-xs-offset-4">
+                        <div class="col-xs-8 col-xs-offset-2 play_link">
                             Play again
                         </div>
                     </a>
                 </div>
+
             </div>
         
 		</div> <!-- /container -->        
