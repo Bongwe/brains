@@ -25,14 +25,21 @@ function startGame() {
 	"Phantom limb pain syndrome is when the central nervous system, which includes your brain, continues to feel the pain of a limb that has been amputated.",
     "The brain can’t feel pain. It interprets pain signals sent to it, but it does not feel pain."];
     let minQuestions = 0;
-    let maxQuestions = 16; 
+    let maxQuestions = 16;
+    let LIVES = 3;
     let pickedQuestionsIndexs = getAListOfRandomNumbers(minQuestions, maxQuestions);
     let pickedBlocksWithZombies = getAListOfRandomNumbers(minQuestions, maxQuestions);
-    let numberOfLives = 3;
+    let numberOfLives = LIVES;
+
+    displayPlayerLives(numberOfLives);
+    hideEndGameSection();
 
     for (let index = 0; index < 16; index++) {
         $("#block-" + index).click(function() {
-            attachAnInterestingFactToTheBlock(index, pickedQuestionsIndexs, factsAboutTheBrain);
+            if (numberOfLives > 0 ) {
+                attachAnInterestingFactToTheBlock(index, pickedQuestionsIndexs, factsAboutTheBrain);
+                $(this).find('img:first').attr('src','img/brain2.png')    
+            }
         });
     }
 
@@ -45,15 +52,24 @@ function startGame() {
     }
 }
 
+function hideEndGameSection() {
+    $("#gameOverMessage").hide();
+}
+
+function displayPlayerLives(numberOfLives) {
+    $("#player_health_status").html("Lives: " + numberOfLives);
+}
+
 function checkIfPlayerIsStillAlive(numberOfLives) {
-    console.log(numberOfLives);
     if (numberOfLives == 0) {
-        alert("YOu died!")
+        $("#an-interesting-fact").hide();
+        $("#gameOverMessage").show();
     }
 }
 
 function takeALiveFromThePlayer (numberOfLives) {
     numberOfLives--;
+    displayPlayerLives(numberOfLives);
     return numberOfLives;
 }
 
